@@ -186,7 +186,7 @@ ynh_replace_string --match_string="__PORT__" --replace_string=$port --target_fil
 #=================================================
 ynh_script_progression --message="Installing Ruby $ruby_version dependencies..." --weight=50
 
-gem_args="--no-rdoc --no-ri"
+gem_args="--no-document"
 
 /opt/rbenv/versions/$ruby_version/bin/gem install $gem_args bundler -v "~> 1"
 /opt/rbenv/versions/$ruby_version/bin/gem install $gem_args passenger -v "~> 6"
