@@ -9,7 +9,7 @@ pkg_dependencies=" \
   bison \
   build-essential \
   default-libmysqlclient-dev \
-  libcurl4-dev \
+  libcurl-dev \
   libffi-dev \
   libgdbm-dev \
   libgdbm6  \
