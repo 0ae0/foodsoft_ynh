@@ -9,10 +9,10 @@ pkg_dependencies=" \
   bison \
   build-essential \
   default-libmysqlclient-dev \
-  libcurl3-dev \
+  libcurl4-dev \
   libffi-dev \
   libgdbm-dev \
-  libgdbm3  \
+  libgdbm6  \
   libmagic-dev \
   libncurses5-dev \
   libreadline-dev \
@@ -27,7 +27,7 @@ pkg_dependencies=" \
   zlib1g-dev \
   "
 
-ruby_version="2.4.6"
+ruby_version="2.5"
 
 #=================================================
 # EXPERIMENTAL HELPERS
@@ -46,8 +46,8 @@ ynh_install_rbenv () {
 SOURCE_SUM=80ad89ffe04c0b481503bd375f05c212bbc7d44ef5f5e649e0acdf25eba86736" > "../conf/rbenv.src"
   ynh_setup_source "$rbenv_install_dir" rbenv
   mkdir -p "../conf"
-  echo "SOURCE_URL=https://github.com/rbenv/ruby-build/archive/v20190615.tar.gz
-SOURCE_SUM=7bcb706f43fd2562a62df79f3f01d71c6a1509fac91c8f14ff9e174dc9d99361" > "../conf/ruby-build.src"
+  echo "SOURCE_URL=https://github.com/rbenv/ruby-build/archive/v20201118.tar.gz
+SOURCE_SUM=5e09e93c01b0b35130dc27aa002c960e0e0b8ba3923c3db8ab932cc75697cad2" > "../conf/ruby-build.src"
   ynh_setup_source "$rbenv_install_dir/plugins/ruby-build" ruby-build
   (cd $rbenv_install_dir 
    ./src/configure && make -C src)
