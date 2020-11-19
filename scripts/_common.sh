@@ -27,7 +27,7 @@ pkg_dependencies=" \
   zlib1g-dev \
   "
 
-ruby_version="2.5.8"
+ruby_version="2.6.6"
 
 #=================================================
 # EXPERIMENTAL HELPERS
